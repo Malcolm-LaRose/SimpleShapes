@@ -144,11 +144,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GeoRenderingUnWrapped.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GeoThree.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="Wrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="color.h" />
-    <ClInclude Include="Shapes.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="textureManager.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Wrapper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

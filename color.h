@@ -4,6 +4,8 @@
 #ifndef COLOR_H
 #define COLOR_H
 
+
+
 #include <SDL.h>
 
 #include <vector>
@@ -25,6 +27,7 @@ public:
         PHSORNG,
         MAGENTA,
         DRKGRY,
+        EIGENGRAU,
         TRANSP
     };
 
@@ -39,6 +42,7 @@ public:
         case PHSORNG: return { 255, 204, 0, 255 };
         case MAGENTA: return { 255, 0, 255, 255 };
         case DRKGRY: return { 55, 55, 55, 255 };
+        case EIGENGRAU: return { 22, 22, 29, 255 };
         case TRANSP: return { 0, 0, 0, 0 };
         default:      throw std::invalid_argument("Invalid named color");
         }
@@ -55,6 +59,7 @@ public:
         case PHSORNG: return { 255, 204, 0 };
         case MAGENTA: return { 255, 0, 255 };
         case DRKGRY: return { 55, 55, 55, };
+        case EIGENGRAU: return { 22, 22, 29, 255 };
         case TRANSP: return { 0, 0, 0, 0 };
         default:      throw std::invalid_argument("Invalid named color");
         }
@@ -71,6 +76,7 @@ public:
         case PHSORNG: return { 255, 204, 0, 255 };
         case MAGENTA: return { 255, 0, 255, 255 };
         case DRKGRY: return { 55, 55, 55, 255 };
+        case EIGENGRAU: return { 22, 22, 29, 255 };
         case TRANSP: return { 0, 0, 0, 0 };
         default:      throw std::invalid_argument("Invalid named color");
         }
